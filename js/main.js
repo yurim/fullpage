@@ -2,9 +2,8 @@
 $(function (){
    $('#fullpage').fullpage({
      // 손으로 드래그
-      fingersonly: true,
-       anchors:['firstPage', 'secondPage', 'thirdPage', 'fourPage',
-       'fifthPage', 'sixPage', 'sevenPage'],
-       menu: '.rightNav'
+       fingersonly: true,
+       anchors:['firstPage','secondPage','thirdPage','fourthPage','fifthPage','sixthPage','seventhPage'],
+       menu:'.rightNav',
    });
 });
