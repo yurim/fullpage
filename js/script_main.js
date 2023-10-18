@@ -57,9 +57,9 @@ $(function(){
 //4.이미지슬라이드- 넓이 높이 스크립트
 
 $(function(){
-    var winW = $(window).width();
-    var winH = $(window).height();
-         list = $('.visual .list');
+    let winW = $(window).width();
+    let winH = $(window).height();
+    let list = $('.visual .list');
     list.css({width: winW+ 'px', height:winH+ 'px'});
 });
 

@@ -94,6 +94,24 @@ li {list-style: none;}
         .dot { opacity: 0; }
       }
    }
+    // dot
+    .slick-dots { position: absolute; bottom: 10%; left:50%; margin-left: -350px; width: 700px; text-align: center;
+    z-index: 1000;
+      li { display: block; float: left; position: relative; width: 145px; height: 100px; margin: 0 15px;
+        cursor: pointer;
+        &:after { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 6px;
+         background: rgba(255,255,255,0.5); }
+        &:before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 0; height: 6px;
+          background: rgba(255,255,255,1); }
+        .pager-tit { margin-top: 25px; color: white; font-size: 15px; text-align: left; letter-spacing: -1px;}
+        }
+      // dot active
+      .slick-active { opacity: 1; }
+      .slick-active:after { border: 1px solid rgba(214,214,214,1); background-color: rgba(255,255,255,0);
+        box-sizing: border-box; opacity: 1; }
+      .slick-active:before { width: 100%; border: 1px solid white; background-color: white; box-sizing: border-box;
+       opacity: 1; transition: width 3s ease; }
+      }
     // 슬라이드 active
     .list.slick-active .textBox {
       .tit { opacity: 1; transform: translate(0,0); transition: all 0.45s ease-in-out; }

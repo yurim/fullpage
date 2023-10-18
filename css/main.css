@@ -231,6 +231,60 @@ li {
             opacity: 0; }
           .wrap .fullPageWrap .visual .list .textBox .dot {
             opacity: 0; }
+      .wrap .fullPageWrap .visual .slick-dots {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        margin-left: -350px;
+        width: 700px;
+        text-align: center;
+        z-index: 1000; }
+        .wrap .fullPageWrap .visual .slick-dots li {
+          display: block;
+          float: left;
+          position: relative;
+          width: 145px;
+          height: 100px;
+          margin: 0 15px;
+          cursor: pointer; }
+          .wrap .fullPageWrap .visual .slick-dots li:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.5); }
+          .wrap .fullPageWrap .visual .slick-dots li:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 6px;
+            background: white; }
+          .wrap .fullPageWrap .visual .slick-dots li .pager-tit {
+            margin-top: 25px;
+            color: white;
+            font-size: 15px;
+            text-align: left;
+            letter-spacing: -1px; }
+        .wrap .fullPageWrap .visual .slick-dots .slick-active {
+          opacity: 1; }
+        .wrap .fullPageWrap .visual .slick-dots .slick-active:after {
+          border: 1px solid #d6d6d6;
+          background-color: rgba(255, 255, 255, 0);
+          box-sizing: border-box;
+          opacity: 1; }
+        .wrap .fullPageWrap .visual .slick-dots .slick-active:before {
+          width: 100%;
+          border: 1px solid white;
+          background-color: white;
+          box-sizing: border-box;
+          opacity: 1;
+          transition: width 3s ease; }
       .wrap .fullPageWrap .visual .list.slick-active .textBox .tit {
         opacity: 1;
         transform: translate(0, 0);
