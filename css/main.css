@@ -293,5 +293,42 @@ li {
         opacity: 0.7;
         transform: translate(0, 0);
         transition: all 0.45s ease-in-out; }
+    .wrap .fullPageWrap #section2 {
+      position: relative;
+      height: 100%; }
+      .wrap .fullPageWrap #section2 .inner {
+        width: 900px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .wrap .fullPageWrap #section2 .inner .label {
+          width: 140px;
+          padding: 10px 0;
+          color: white;
+          font-size: 17px;
+          background: black;
+          text-align: center; }
+        .wrap .fullPageWrap #section2 .inner .tit {
+          float: left;
+          margin-top: 35px;
+          color: white;
+          font-size: 40px;
+          line-height: 1.2;
+          letter-spacing: -1px; }
+        .wrap .fullPageWrap #section2 .inner .countBox {
+          float: right;
+          margin-top: 25px;
+          width: 400px; }
+          .wrap .fullPageWrap #section2 .inner .countBox .count {
+            color: white;
+            font-size: 75px;
+            font-family: 'roboto', sans-serif;
+            letter-spacing: 3px; }
+          .wrap .fullPageWrap #section2 .inner .countBox .txt {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 20px;
+            opacity: 0.45; }
 
 /*# sourceMappingURL=main.css.map */
