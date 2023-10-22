@@ -308,14 +308,20 @@ li {
           color: white;
           font-size: 17px;
           background: black;
-          text-align: center; }
+          text-align: center;
+          opacity: 0;
+          transform: translate(30px, 0px);
+          transition: all 1.2s ease; }
         .wrap .fullPageWrap #section2 .inner .tit {
           float: left;
           margin-top: 35px;
           color: white;
           font-size: 40px;
           line-height: 1.2;
-          letter-spacing: -1px; }
+          letter-spacing: -1px;
+          opacity: 0;
+          transform: translate(30px, 0px);
+          transition: all 1.2s ease; }
         .wrap .fullPageWrap #section2 .inner .countBox {
           float: right;
           margin-top: 25px;
@@ -330,5 +336,13 @@ li {
             color: white;
             font-size: 20px;
             opacity: 0.45; }
+    .wrap .fullPageWrap #section2.active .inner .label {
+      opacity: 1;
+      transform: translate(0, 0);
+      transition: all 1.2s ease-in-out; }
+    .wrap .fullPageWrap #section2.active .inner .tit {
+      opacity: 1;
+      transform: translate(0, 0);
+      transition: all 1.2s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
