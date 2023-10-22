@@ -345,4 +345,77 @@ li {
       transform: translate(0, 0);
       transition: all 1.2s ease-in-out; }
 
+#section3 {
+  position: relative;
+  height: 100%; }
+  #section3 .inner {
+    width: 100%; }
+    #section3 .inner .topBox {
+      position: absolute;
+      top: 23%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      text-align: center; }
+      #section3 .inner .topBox .tit {
+        color: white;
+        font-size: 65px;
+        line-height: 1.4;
+        font-weight: 300; }
+        #section3 .inner .topBox .tit span {
+          display: block;
+          font-weight: 500; }
+      #section3 .inner .topBox .btn {
+        display: block;
+        background: white;
+        width: 200px;
+        margin: 25px auto;
+        height: 55px;
+        line-height: 55px;
+        color: #333;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center; }
+      #section3 .inner .topBox .txt {
+        font-size: 14px;
+        color: white;
+        opacity: 0.5; }
+    #section3 .inner .bottomBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3); }
+      #section3 .inner .bottomBox ul {
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 0; }
+        #section3 .inner .bottomBox ul li {
+          text-align: center;
+          border-left: 1px solid rgba(255, 255, 255, 0.2);
+          box-sizing: border-box;
+          width: 33.333%; }
+          #section3 .inner .bottomBox ul li .img {
+            margin-bottom: 20px; }
+          #section3 .inner .bottomBox ul li .date {
+            color: white;
+            font-weight: bold; }
+            #section3 .inner .bottomBox ul li .date span {
+              font-size: 80px;
+              font-family: 'roboto', sans-serif; }
+            #section3 .inner .bottomBox ul li .date strong {
+              font-size: 35px; }
+          #section3 .inner .bottomBox ul li .txt {
+            color: white;
+            font-size: 16px;
+            opacity: 0.7; }
+            #section3 .inner .bottomBox ul li .txt span {
+              display: block;
+              font-size: 13px; }
+        #section3 .inner .bottomBox ul li:first-child {
+          border-left: none; }
+
 /*# sourceMappingURL=main.css.map */
