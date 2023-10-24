@@ -5,10 +5,10 @@ $(function(){
         anchors:['firstPage','secondPage','thirdPage','fourthPage','fifthPage','sixthPage','seventhPage'],
         menu:'.rightNav',
         afterLoad: function(anchorLink, index){
-            if(index == 2){
+            if(index === 2){
                 $('.count').counterUp({delay: 10,time: 550});
                 }
-            if(index == 3){
+            if(index === 3){
                 $('.count2').counterUp({delay: 10,time: 550});
             }
         }
@@ -48,7 +48,7 @@ $(function(){
         pauseOnFocus: false,
         autoplaySpeed : 2800,
         customPaging: function(slider, i){
-            var tit = $(slider.$slides[i]).find('.dot').html();
+            let tit = $(slider.$slides[i]).find('.dot').html();
             return '<div class="pager-tit" class= "+ i +">'+ tit + '</div>';     
         }         
     });
