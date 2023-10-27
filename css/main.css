@@ -521,6 +521,46 @@ li {
   transform: translate(0, 0);
   transition: all 1.2s ease-in-out; }
 
+#section5 {
+  position: relative;
+  height: 100%; }
+  #section5 .inner {
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #section5 .inner .topBox {
+      opacity: 0;
+      transform: translate(0, -100px);
+      transition: all 1.2s ease; }
+      #section5 .inner .topBox .tit {
+        font-size: 65px;
+        color: white;
+        line-height: 1.2;
+        font-weight: 300;
+        margin-bottom: 25px; }
+        #section5 .inner .topBox .tit span {
+          display: block;
+          font-weight: 500; }
+      #section5 .inner .topBox .txt {
+        color: white;
+        font-size: 17px;
+        line-height: 1.4px;
+        letter-spacing: -1px;
+        opacity: 0.8; }
+    #section5 .inner .bottomBox {
+      opacity: 0;
+      transform: translate(0, 100px);
+      transition: all 1.2s ease;
+      margin-top: 50px; }
+
+#section5.active .inner .topBox, #section5.active .inner .bottomBox {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 1.2s ease-in-out; }
+
 @keyframes gitBox {
   0% {
     transform: scale(0.3); }
