@@ -571,15 +571,19 @@ li {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    #section6 .inner .topBox .tit {
-      margin-bottom: 25px;
-      color: white;
-      font-size: 65px;
-      line-height: 1.2;
-      font-weight: 300; }
-      #section6 .inner .topBox .tit span {
-        display: block;
-        font-weight: 500; }
+    #section6 .inner .topBox {
+      opacity: 0;
+      transform: translate(0, -100px);
+      transition: 1.2s ease; }
+      #section6 .inner .topBox .tit {
+        margin-bottom: 25px;
+        color: white;
+        font-size: 65px;
+        line-height: 1.2;
+        font-weight: 300; }
+        #section6 .inner .topBox .tit span {
+          display: block;
+          font-weight: 500; }
     #section6 .inner .bottomBox .snsList {
       display: flex;
       justify-content: space-between;
@@ -644,22 +648,29 @@ li {
       margin: 0 auto;
       justify-content: space-between;
       transform: translate(0, 100px);
-      transition: all 1.2s ease; }
+      transition: all 1.2s ease;
+      opacity: 0; }
       #section6 .inner .bottomBox .snsIco li.ico-f a {
         background-position: 4px 0; }
       #section6 .inner .bottomBox .snsIco li.ico-i a {
-        background-position: -46px 0; }
+        background-position: -45px 0; }
       #section6 .inner .bottomBox .snsIco li.ico-b a {
-        background-position: -95px 0; }
+        background-position: -94px 0; }
       #section6 .inner .bottomBox .snsIco li a {
         display: block;
-        width: 20px;
+        width: 22px;
         height: 25px;
         background: url("../images/ico_footer_sns.png") 0 0 no-repeat; }
       #section6 .inner .bottomBox .snsIco li span {
         display: block;
         text-indent: -9999px;
         opacity: 0; }
+
+#section6.active .inner .topBox, #section6.active .inner .bottomBox .snsIco {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 1.2s ease-in-out;
+  transition-duration: 0.2s; }
 
 @keyframes gitBox {
   0% {
