@@ -128,7 +128,7 @@ li {
     .wrap .fullPageWrap #section5 {
       background: url("../images/main_visual_05.jpg") no-repeat 50%; }
     .wrap .fullPageWrap #section6 {
-      background: url("../images/main_visual_06.jpg") no-repeat 50%; }
+      background: url("../images/main_visual_06.jpg"); }
     .wrap .fullPageWrap #section7 {
       background: url("../images/main_visual_07.jpg") no-repeat 50%; }
     .wrap .fullPageWrap .rightNav {
@@ -560,6 +560,106 @@ li {
   opacity: 1;
   transform: translate(0, 0);
   transition: all 1.2s ease-in-out; }
+
+#section6 {
+  position: relative;
+  height: 100%; }
+  #section6 .inner {
+    width: 1100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #section6 .inner .topBox .tit {
+      margin-bottom: 25px;
+      color: white;
+      font-size: 65px;
+      line-height: 1.2;
+      font-weight: 300; }
+      #section6 .inner .topBox .tit span {
+        display: block;
+        font-weight: 500; }
+    #section6 .inner .bottomBox .snsList {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 30px 0; }
+      #section6 .inner .bottomBox .snsList li {
+        width: 23.5%;
+        margin: 0.6%; }
+        #section6 .inner .bottomBox .snsList li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: relative; }
+          #section6 .inner .bottomBox .snsList li a:before {
+            content: "";
+            background: url("../images/Instagram_bg.png") no-repeat center/cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.3s; }
+          #section6 .inner .bottomBox .snsList li a:after {
+            content: "❤ 295";
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            opacity: 0; }
+          #section6 .inner .bottomBox .snsList li a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          #section6 .inner .bottomBox .snsList li a:hover:before {
+            opacity: 1;
+            transition: all 0.5s; }
+          #section6 .inner .bottomBox .snsList li a:hover:after {
+            opacity: 1;
+            transition: all 0.5s; }
+      #section6 .inner .bottomBox .snsList li:nth-child(1) a:after {
+        content: "❤ 291"; }
+      #section6 .inner .bottomBox .snsList li:nth-child(2) a:after {
+        content: "❤ 292"; }
+      #section6 .inner .bottomBox .snsList li:nth-child(3) a:after {
+        content: "❤ 293"; }
+      #section6 .inner .bottomBox .snsList li:nth-child(4) a:after {
+        content: "❤ 294"; }
+      #section6 .inner .bottomBox .snsList li:nth-child(5) a:after {
+        content: "❤ 295"; }
+      #section6 .inner .bottomBox .snsList li:nth-child(6) a:after {
+        content: "❤ 296"; }
+      #section6 .inner .bottomBox .snsList li:nth-child(7) a:after {
+        content: "❤ 297"; }
+      #section6 .inner .bottomBox .snsList li:nth-child(8) a:after {
+        content: "❤ 298"; }
+    #section6 .inner .bottomBox .snsIco {
+      display: flex;
+      width: 200px;
+      margin: 0 auto;
+      justify-content: space-between;
+      transform: translate(0, 100px);
+      transition: all 1.2s ease; }
+      #section6 .inner .bottomBox .snsIco li.ico-f a {
+        background-position: 4px 0; }
+      #section6 .inner .bottomBox .snsIco li.ico-i a {
+        background-position: -46px 0; }
+      #section6 .inner .bottomBox .snsIco li.ico-b a {
+        background-position: -95px 0; }
+      #section6 .inner .bottomBox .snsIco li a {
+        display: block;
+        width: 20px;
+        height: 25px;
+        background: url("../images/ico_footer_sns.png") 0 0 no-repeat; }
+      #section6 .inner .bottomBox .snsIco li span {
+        display: block;
+        text-indent: -9999px;
+        opacity: 0; }
 
 @keyframes gitBox {
   0% {
